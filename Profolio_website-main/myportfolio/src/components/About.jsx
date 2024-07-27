@@ -1,12 +1,14 @@
 import React from "react";
 import AnimatedCard from "../Widgets/Animated_card";
 import Skill_card from "../Widgets/Skill_card";
-import flutter from '../assets/Icons/flutter_image.png'
-import react_native from '../assets/Icons/react_native.png'
-import angular from '../assets/Icons/angular.png'
-import sqflite from '../assets/Icons/sqflite.png'
-import firebase from '../assets/Icons/firebase.png'
-import api from '../assets/Icons/api.png'
+import flutter from "../assets/Icons/flutter_image.png";
+import react_native from "../assets/Icons/react_native.png";
+import angular from "../assets/Icons/angular.png";
+import sqflite from "../assets/Icons/sqflite.png";
+import firebase from "../assets/Icons/firebase.png";
+import api from "../assets/Icons/api.png";
+import BallCanvas from "./Ball";
+
 const About = () => {
   return (
     <div className="container about text-center pt-3">
@@ -19,67 +21,90 @@ const About = () => {
         practices and UI/UX principles. Excellent problem-solving skills and
         ability to work in a fast-paced, collaborative environment.
       </p>
-      <h1 className="oleo do-h" style={{ marginTop: '90px' }}>What I can do?</h1>
+      <h1 className="oleo do-h" style={{ marginTop: "90px" }}>
+        What I can do?
+      </h1>
 
       <div className="cards-row">
-        <AnimatedCard
+        <div>
+          <BallCanvas icon={flutter} />
+        </div>
+
+        {/* <AnimatedCard
           imageUrl={flutter} // Replace with your image URL
           description="Flutter"
-        />
-        <AnimatedCard
+        /> */}
+        <div>
+          <BallCanvas icon={react_native} />
+        </div>
+        {/* <AnimatedCard
           imageUrl={react_native} // Replace with your image URL
           description="React Native"
-        />
-        <AnimatedCard
+        /> */}
+        <div>
+          <BallCanvas icon={firebase} />
+        </div>
+        {/* <AnimatedCard
           imageUrl={firebase} // Replace with your image URL
           description="Firebase"
-        />
-         <AnimatedCard
+        /> */}
+        <div>
+          <BallCanvas icon={angular} />
+        </div>
+        {/* <AnimatedCard
           imageUrl={angular} // Replace with your image URL
           description="Angular"
-        />
-        <AnimatedCard
+        /> */}
+        <div>
+          <BallCanvas icon={sqflite} />
+        </div>
+        {/* <AnimatedCard
           imageUrl={sqflite} // Replace with your image URL
           description="Sqf Lite"
-        />
-        <AnimatedCard
+        /> */}
+        <div>
+          <BallCanvas icon={firebase} />
+        </div>
+
+        {/* <AnimatedCard
           imageUrl={firebase} // Replace with your image URL
           description="Firebase"
-        />
-         <AnimatedCard
+        /> */}
+        <div>
+          <BallCanvas icon={api} />
+        </div>
+        {/* <AnimatedCard
           imageUrl={api} // Replace with your image URL
           description="Rest Apis"
-        />
+        /> */}
       </div>
       <div className="row card2">
-      <div className="col-sm-6 center-col">
-      <Skill_card
-      heading="MOBILE APPS DEVELOPEMENT"
-      description="I can develop best of the best Android and Ios app for you using Flutter framework. I am using best approaches and patterns that I have learned. I have a good experience on flutter state management using bloc, provider and getx. I always keep user experience in mind while writing code so that app is always responsive and fast."
-      />
-      
-      </div>
-      <div className="col-sm-6 center-col col2">
-      <Skill_card
-      heading="MOBILE APPS DEVELOPEMENT"
-      description="I can develop best of the best Android and Ios app for you using Flutter framework. I am using best approaches and patterns that I have learned. I have a good experience on flutter state management using bloc, provider and getx. I always keep user experience in mind while writing code so that app is always responsive and fast."
-      />
-      </div>
+        <div className="col-sm-6 center-col">
+          <Skill_card
+            heading="MOBILE APPS DEVELOPEMENT"
+            description="I can develop best of the best Android and Ios app for you using Flutter framework. I am using best approaches and patterns that I have learned. I have a good experience on flutter state management using bloc, provider and getx. I always keep user experience in mind while writing code so that app is always responsive and fast."
+          />
+        </div>
+        <div className="col-sm-6 center-col col2">
+          <Skill_card
+            heading="MOBILE APPS DEVELOPEMENT"
+            description="I can develop best of the best Android and Ios app for you using Flutter framework. I am using best approaches and patterns that I have learned. I have a good experience on flutter state management using bloc, provider and getx. I always keep user experience in mind while writing code so that app is always responsive and fast."
+          />
+        </div>
       </div>
       <div className="row card2">
-      <div className="col-sm-6 center-col">
-      <Skill_card
-      heading="MOBILE APPS DEVELOPEMENT"
-      description="I can develop best of the best Android and Ios app for you using Flutter framework. I am using best approaches and patterns that I have learned. I have a good experience on flutter state management using bloc, provider and getx. I always keep user experience in mind while writing code so that app is always responsive and fast."
-      />
-      
-      </div>
-      <div className="col-sm-6 center-col col2">
-      <Skill_card
-      heading="MOBILE APPS DEVELOPEMENT"
-      description="I can develop best of the best Android and Ios app for you using Flutter framework. I am using best approaches and patterns that I have learned. I have a good experience on flutter state management using bloc, provider and getx. I always keep user experience in mind while writing code so that app is always responsive and fast."
-      />
-      </div>
+        <div className="col-sm-6 center-col">
+          <Skill_card
+            heading="MOBILE APPS DEVELOPEMENT"
+            description="I can develop best of the best Android and Ios app for you using Flutter framework. I am using best approaches and patterns that I have learned. I have a good experience on flutter state management using bloc, provider and getx. I always keep user experience in mind while writing code so that app is always responsive and fast."
+          />
+        </div>
+        <div className="col-sm-6 center-col col2">
+          <Skill_card
+            heading="MOBILE APPS DEVELOPEMENT"
+            description="I can develop best of the best Android and Ios app for you using Flutter framework. I am using best approaches and patterns that I have learned. I have a good experience on flutter state management using bloc, provider and getx. I always keep user experience in mind while writing code so that app is always responsive and fast."
+          />
+        </div>
       </div>
     </div>
   );
