@@ -1,4 +1,4 @@
-// AnimatedCard.js
+
 import React from 'react';
 
 

@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Oleo+Script:wght@400;700&family=Playwrite+CA:wght@100..400&display=swap');
 /* Define CSS variables for dynamic colors */
 :root {
-  --primary-color: #20b2aa;
+  --primary-color: #debe1a;
   --text-color: aliceblue;
   --hover-background: #242424;
   --shadow-color: rgba(255, 255, 255, 0.5);
@@ -10,7 +10,8 @@
 
 .mybody {
   /* give a gradient background */
-  background: linear-gradient(120deg, #000000, #303030, rgb(0, 0, 0));
+
+  background: linear-gradient(120deg, #000000, #0c0c0cd0, rgb(0, 0, 0));
   color: var(--text-color);
   margin: 0;
   padding: 0;
@@ -66,6 +67,8 @@
 /* Hero Section */
 .hero-section {
   margin-top: 100px;
+ 
+  
   
 }
 
@@ -177,15 +180,13 @@ div.hero-buttons {
 }
 
 .animated-card {
-  background: var(--background-color);
+  background: var(--primary-color);
   border-radius: 10px;
-
   margin: 10px; /* Margin around the card itself */
   overflow: hidden; /* Ensures the image doesn’t overflow the card */
   transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
   transform: scale(1); /* Default scale */
   display: flex;
-  flex-direction: column; /* Stack children vertically */
   align-items: center; /* Center children horizontally */
   justify-content: center; /* Center children vertically */
   text-align: center; /* Center text inside the card */
@@ -193,6 +194,13 @@ div.hero-buttons {
   max-height: 200px;
   height: 200px;
   animation: fadeIn 1s forwards;
+  perspective: 1000px;
+}
+.animated-card:hover {
+  transform: scale(1.05); /* Slightly scale up the card */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+  background-color: var(--hover-background-color); /* Optional: Change background color on hover */
+
 }
 
 @keyframes fadeIn {
@@ -202,11 +210,6 @@ div.hero-buttons {
   to {
     opacity: 1;
   }
-}
-
-.animated-card:hover {
-  transform: scale(1.05) translateY(-10px); /* Zoom in and move up */
-  box-shadow: 0 8px 16px var(--shadow-color); /* White shadow with some transparency */
 }
 
 .card-image img {
@@ -231,13 +234,6 @@ div.hero-buttons {
 }
   
 
-/* .cards-row .animated-card {
-  padding: auto;
-  margin: 20px;
-  max-width: 100px;
-  max-height: 200px;
-  
-} */
 .cards-col {
   margin-top: 30px;
 }
@@ -253,12 +249,38 @@ div.hero-buttons {
   font-size: 1.25em; /* Adjust this value to make the heading smaller or larger */
   margin-bottom: 10px;
 }
+@keyframes rotateEffect {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
 .about-card {
+  background: rgb(255, 255, 255,0.1);
+  width: 280px;
   padding: 1px;
-  border: 1px solid var(--primary-color); /* Change this color to whatever you prefer */
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255,0.1);
+ 
   border-radius: 25px; /* Optional: to give rounded corners */
   padding: 16px; /* Optional: for some spacing inside the border */
   margin: 10px; /* Optional: to add space between cards */
+  transition: transform 0.6s ease-in-out, box-shadow 0.8s ease; /* Smooth transitions */
+ 
+}
+
+.about-card-content:hover{
+  transform: scale(1.05) rotateX(10deg) rotateY(10deg); 
+  transform: translateY(0px);
+  opacity: 1;
+}
+
+.about-card:hover {
+  transform: scale(1.05); /* Scale up the card */
+  box-shadow: 0 8px 16px rgba(var(--primary-color-rgb), 0.2); 
+
 }
 
 /* 3d model */
@@ -366,4 +388,36 @@ div.hero-buttons {
     opacity: 1;
   }
 }
+.SkillBar{
+  margin-top: 20px;
+}
 
+.skill-bar-title {
+  font-size: 18px;
+  margin-bottom: 5px;
+  font-weight: bold;
+  text-align: start;
+}
+.skill-bar-container {
+  width: 100%;
+  background-color: #e0e0e0;
+  border-radius: 8px;
+}
+
+
+.skill-bar-progress {
+  height: 15px;
+  background-color: var(--primary-color);
+  border-radius: 7px;
+  transition: width 0.3s ease;
+}
+
+.project {
+margin-top: 60px;
+}
+.projectdetails{
+  height: 100px;
+  width: 100px;
+  color: #fff;
+  padding: 20px;
+}

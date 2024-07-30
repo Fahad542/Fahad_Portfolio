@@ -1,10 +1,12 @@
 import React from "react";
 import { motion } from "framer-motion";
 import MobileCanvas from "./Mobile";
+import background from "../assets/videos/background.mp4"
 
 const Hero = () => {
   return (
     <div className="container hero-section">
+ 
       <div className="row d-flex align-items-center">
         <motion.div
           animate={{
@@ -22,7 +24,7 @@ const Hero = () => {
           <div className="line"></div>
           <div className="hero">
             <p className="hero-text oleo">
-              Hi I am <span className="myname">Fahad Shafiq</span>
+              Hi I am <span className="myname">Fahad</span>
             </p>
             <p>Frontend Developer</p>
 
@@ -36,6 +38,7 @@ const Hero = () => {
           <MobileCanvas />
         </div>
       </div>
+      
     </div>
   );
 };
