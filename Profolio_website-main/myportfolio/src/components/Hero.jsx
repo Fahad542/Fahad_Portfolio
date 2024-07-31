@@ -1,12 +1,11 @@
 import React from "react";
 import { motion } from "framer-motion";
 import MobileCanvas from "./Mobile";
-import background from "../assets/videos/background.mp4"
+import background from "../assets/videos/background.mp4";
 
 const Hero = () => {
   return (
     <div className="container hero-section">
- 
       <div className="row d-flex align-items-center">
         <motion.div
           animate={{
@@ -34,11 +33,13 @@ const Hero = () => {
             </div>
           </div>
         </motion.div>
-        <div className="col-md-6 mobilediv">
-          <MobileCanvas />
+        <div className="col-md-6 position-relative">
+          <div className="circle-behind"></div>
+          <div className="mobilediv">
+            <MobileCanvas />
+          </div>
         </div>
       </div>
-      
     </div>
   );
 };

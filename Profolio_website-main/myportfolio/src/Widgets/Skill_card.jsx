@@ -1,9 +1,9 @@
-import React, { useEffect } from 'react';
-import VanillaTilt from 'vanilla-tilt'; // Import Vanilla Tilt
+import React, { useEffect } from "react";
+import VanillaTilt from "vanilla-tilt"; // Import Vanilla Tilt
 
 const Skill_card = ({ heading, description }) => {
   useEffect(() => {
-    const tiltElements = document.querySelectorAll('.about-card');
+    const tiltElements = document.querySelectorAll(".about-card");
     VanillaTilt.init(tiltElements, {
       max: 25, // Maximum tilt angle
       speed: 500, // Speed of the tilt effect
@@ -17,7 +17,7 @@ const Skill_card = ({ heading, description }) => {
   }, []);
 
   return (
-    <div className='about-card'>
+    <div className="about-card">
       <div className="about-card-content">
         <h1 className="card-heading">{heading}</h1>
         <p className="card-description">{description}</p>

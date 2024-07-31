@@ -6,6 +6,7 @@
   --text-color: aliceblue;
   --hover-background: #242424;
   --shadow-color: rgba(255, 255, 255, 0.5);
+  --gradient-color: rgb(199, 211, 35);
 }
 
 .mybody {
@@ -86,7 +87,7 @@
   width: 6px;
   margin-top: 2px;
   margin-left: 10px;
-  background: linear-gradient(to bottom, var(--primary-color) 0%, rgba(67, 62, 62, 0.5) 50%, rgba(0, 0, 0, 0.5) 100%);
+  background: linear-gradient(to bottom, var(--primary-color) 0%, hsla(0, 4%, 25%, 0.5) 50%, rgba(0, 0, 0, 0.5) 100%);
 }
 
 .oleo {
@@ -249,6 +250,7 @@ div.hero-buttons {
   font-size: 1.25em; /* Adjust this value to make the heading smaller or larger */
   margin-bottom: 10px;
 }
+
 @keyframes rotateEffect {
   from {
     transform: rotate(0deg);
@@ -257,30 +259,47 @@ div.hero-buttons {
     transform: rotate(360deg);
   }
 }
+
 .about-card {
-  background: rgb(255, 255, 255,0.1);
+  position: relative;
+  background: rgb(66, 66, 66);
   width: 280px;
   padding: 1px;
-  backdrop-filter: blur(5px);
-  border: 1px solid rgba(255, 255, 255,0.1);
- 
-  border-radius: 25px; /* Optional: to give rounded corners */
-  padding: 16px; /* Optional: for some spacing inside the border */
-  margin: 10px; /* Optional: to add space between cards */
+  border-radius: 25px; /* Rounded corners */
+  margin: 10px; /* Space between cards */
   transition: transform 0.6s ease-in-out, box-shadow 0.8s ease; /* Smooth transitions */
- 
+  z-index: 0; /* Ensure the pseudo-element is behind the content */
+  overflow: hidden; /* Ensure no overflow beyond the rounded corners */
 }
 
-.about-card-content:hover{
-  transform: scale(1.05) rotateX(10deg) rotateY(10deg); 
-  transform: translateY(0px);
+.about-card::before {
+  content: "";
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  right: -1px;
+  bottom: -1px;
+  background: linear-gradient(45deg, #202020, #f1ee37, #f1ee37, #202020);
+  z-index: -1;
+  border-radius: 27px; 
+}
+
+.about-card-content {
+  position: relative;
+  border-radius: 25px; 
+  background: inherit; 
+  padding: 16px; 
+}
+
+
+.about-card-content:hover {
+  transform: rotateX(10deg) rotateY(10deg);
   opacity: 1;
 }
 
 .about-card:hover {
-  transform: scale(1.05); /* Scale up the card */
-  box-shadow: 0 8px 16px rgba(var(--primary-color-rgb), 0.2); 
-
+  transform: scale(1.05); 
+  box-shadow: 0 8px 16px rgba(var(--primary-color-rgb), 0.2);
 }
 
 /* 3d model */
@@ -372,12 +391,36 @@ div.hero-buttons {
   }
 }
 
-.mobilediv{
+.mobilediv {
+  position: relative; 
+  z-index: 2; 
   height: 60vh;
   animation: slideInLeft 3s ease-out;
   padding: 30px;
 }
 
+.circle-behind {
+  position: absolute;
+  height: 400px;
+  width: 400px; 
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 15px rgb(188, 197, 109), 0 0 30px rgb(188, 197, 109), 0 0 45px rgb(188, 197, 109);
+  animation: glow 2s infinite alternate, popOut 4s ease-out forwards;
+}
+
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 5px var(--primary-color), 0 0 10px var(--primary-color), 0 0 15px var(--primary-color);
+  }
+  100% {
+    box-shadow: 0 0 20px rgb(187, 184, 20), 0 0 30px rgb(187, 184, 20), 0 0 60px rgb(187, 184, 20);
+  }
+}
 @keyframes slideInLeft {
   from {
     transform: translateX(-100%);
@@ -388,7 +431,18 @@ div.hero-buttons {
     opacity: 1;
   }
 }
-.SkillBar{
+
+@keyframes popOut {
+  0% {
+    transform: translate(-50%, -50%) scale(0);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+  }
+}
+.SkillBar {
   margin-top: 20px;
 }
 
@@ -398,19 +452,22 @@ div.hero-buttons {
   font-weight: bold;
   text-align: start;
 }
+
 .skill-bar-container {
   width: 100%;
   background-color: #e0e0e0;
   border-radius: 8px;
+  overflow: hidden; 
 }
-
 
 .skill-bar-progress {
-  height: 15px;
+  height: 17px;
   background-color: var(--primary-color);
   border-radius: 7px;
-  transition: width 0.3s ease;
+  transition: width 3s ease-in-out;
 }
+
+
 
 .project {
 margin-top: 60px;
