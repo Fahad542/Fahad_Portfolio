@@ -115,24 +115,12 @@ const About = () => {
     <Skill_bar skillName={'React Native'}  percentage={60}/>
     <Skill_bar skillName={'HTML'}  percentage={50}/>
     <Skill_bar skillName={'CSS'}  percentage={40}/>
-    <div className="timeline">
-    <div className="col-left">
-      <Timeline heading="MATRICULATION" description="asdasdasdsad"/>
+    
+    <div className="timeline-container">
+    <Timeline/>
     </div>
-    <div className="col-right">
-      <Timeline heading="INTERMEDIATE" description="asdasdasdsad"/>
-    </div>
-    <div className="col-left">
-      <Timeline heading="GRADUATION" description="asdasdasdsad"/>
-    </div>
-    <div class="center-line"></div>
-    <div className="col-right">
-      <Timeline heading="POST GRADUATE DIPLOMA" description="asdasdasdsad"/>
-    </div>
-    <div className="col-left">
-      <Timeline heading="Education" description="asdasdasdsad"/>
-    </div>
-      </div>
+    
+
     </div>
   );
 };

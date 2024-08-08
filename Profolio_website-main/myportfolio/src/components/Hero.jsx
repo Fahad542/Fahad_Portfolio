@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import MobileCanvas from "./Mobile";
-import background from "../assets/videos/background.mp4";
+
 
 const Hero = () => {
   return (
@@ -34,7 +34,7 @@ const Hero = () => {
           </div>
         </motion.div>
         <div className="col-md-6 position-relative">
-          <div className="circle-behind"></div>
+          {/* <div className="circle-behind"></div> */}
           <div className="mobilediv">
             <MobileCanvas />
           </div>

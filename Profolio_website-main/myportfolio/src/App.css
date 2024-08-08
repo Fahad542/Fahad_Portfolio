@@ -12,7 +12,7 @@
 .mybody {
   /* give a gradient background */
 
-  background: linear-gradient(120deg, #000000, #0c0c0cd0, rgb(0, 0, 0));
+  background:  rgb(30, 30, 30);
   color: var(--text-color);
   margin: 0;
   padding: 0;
@@ -115,7 +115,7 @@
   width: 100%;
   color: #fff;
   border-radius: 40px;
-  animation: fadeIn 1s forwards;
+
   padding-bottom: 50px;
 }
 
@@ -146,20 +146,15 @@ p.into-text {
   border-radius: 30px;
   padding: 30px;
   margin-top: 25px;
+
   color: #2c2c2c;
   font-size: 20px;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 
-  transition: transform 0.5s ease, background-color 0.3s ease, box-shadow 0.3s ease;
-}
-.into-text:hover {
-  transform: scale(1.05); /* Slightly increase the size */
-
-  box-shadow: 0 8px 16px var(--shadow-color); /* Add shadow for depth */
 }
 button.button {
   padding: 10px 20px;
-  background-color: black;
+  background-color: rgb(30, 30, 30);
   border: 2px solid var(--primary-color);
   color: var(--background-color);
   cursor: pointer;
@@ -186,7 +181,7 @@ div.hero-buttons {
   border-radius: 10px;
   margin: 10px; /* Margin around the card itself */
   overflow: hidden; /* Ensures the image doesn’t overflow the card */
-
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
   transform: scale(1); /* Default scale */
   display: flex;
   align-items: center; /* Center children horizontally */
@@ -195,13 +190,13 @@ div.hero-buttons {
   padding: 20px; /* Padding inside the card */
   max-height: 200px;
   height: 200px;
-
+  animation: fadeIn 1s forwards;
   perspective: 1000px;
 }
 .animated-card:hover {
-
-  
-  background: linear-gradient(15deg, #2c2c2c, #4a4a4a); 
+  transform: scale(1.05); /* Slightly scale up the card */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+  background-color: var(--hover-background-color); /* Optional: Change background color on hover */
 
 }
 
@@ -263,7 +258,7 @@ div.hero-buttons {
 
 .about-card {
   position: relative;
-  background: linear-gradient(15deg, #2c2c2c, #4a4a4a); 
+  background: rgb(30, 30, 30);
   width: 280px;
   padding: 1px;
   border-radius: 25px; /* Rounded corners */
@@ -293,12 +288,10 @@ div.hero-buttons {
 }
 
 
-.about-card-content:hover {
-  transform: rotateX(10deg) rotateY(10deg);
-  opacity: 1;
-}
+
 
 .about-card:hover {
+
   transform: scale(1.05); 
   box-shadow: 0 8px 16px rgba(var(--primary-color-rgb), 0.2);
 }
@@ -470,94 +463,118 @@ div.hero-buttons {
 
 
 
-.project {
-margin-top: 60px;
-}
-.projectdetails{
-  height: 100px;
-  width: 100px;
-  color: #fff;
-  padding: 20px;
-}
-.project-card {
-  border: 2px solid #debe1a;
-  width: 280px;
-  border-radius: 20px;
-  background-color: transparent;
-  color: #fff;
-  transition: background-color 0.3s, color 0.3s; /* Smooth transition effect */
-  position: relative;
-  overflow: hidden;
-}
-
-.project-card h1, .project-card p {
-  visibility: hidden; /* Hide text initially */
-  opacity: 0;
-  transition: visibility 0.3s, opacity 0.5s;
-}
-
-.project-card:hover {
-  color: #000;
-  background-color: rgba(222, 190, 26, 0.5);
-}
-
-.project-card:hover h1, .project-card:hover p {
-  visibility: visible; /* Show text on hover */
-  opacity: 1;
-}
 
 
+.project-card{
+  
+  position: relative; 
+  margin-top: 60px;
+  overflow: hidden; 
+  border-radius: 25px;
 
-.timeline-container {
 
-  padding: 10px 50px;
-  display: flex;
-  flex-direction: column;
-  border-bottom: 5px solid yellow; /* Add yellow border at the bottom */
 }
-.timelinecontent{
-  text-align: start;
+.project-image {
+  padding: 10px;
+  height: 250px;
+  width: 350px;
 }
-
-.timeline {
-  margin-top: 120px;
-  border-radius: 10px;
-  margin-bottom: 20px;
+.project-icon{
+  height: 40px;
+  width: 40px;
+}
+.project-card img {
+  transition: transform 0.5s ease;
+}
+.card-content{
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100%; /* Ensure the timeline takes the full width */
-  position: relative; /* For positioning child elements absolutely */
+  justify-content: center;
 }
-
-.col-left,
-.col-right {
-  border-bottom: 3px solid var(--primary-color); 
-  width: 45%; /* Set the width of each column */
-  margin: 10px 0; /* Margin for spacing between items */
-  padding: 10px; /* Padding for content inside the columns */
-  position: relative;
-  border-radius: 15px; /* Border radius for rounded corners */
-}
-
-.col-left {
-  border-bottom: 3px solid var(--primary-color); 
-  background: linear-gradient(135deg, #2c2c2c, #4a4a4a); 
-  align-self: flex-start; /* Align left column items to the start */
-}
-
-.col-right {
-  background: linear-gradient(135deg, #2c2c2c, #4a4a4a); 
-  align-self: flex-end; /* Align right column items to the end */
-  animation: fadeIn 1.5s forwards;
-}
-.center-line {
-  width: 3px; /* Adjust width as needed */
+.preview-button {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 6px 15px;
+  color: white;
+  font-size: small;
+  background-color: black;
+  text-decoration: none;
   border-radius: 10px;
-  height: 100%; /* Full height for the line */
-  background-color: var(--primary-color); /* Line color */
-  position: absolute; /* Position it in the center */
-  left: 50%;
-  transform: translateX(-50%);
+  transition: background-color 0.3s;
+}
+.project-icon{
+  
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+}
+.project-overlay{
+  
+  height: 0;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(transparent,var(--primary-color));
+  transition: height 0.5s;
+  overflow: hidden; 
+}
+.project-overlay h4{
+ 
+  margin-top: 10px;
+  margin-bottom: 5px;
+  color: #000;
+  
+} 
+.project-overlay p
+{
 
+  padding: 5px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  color: #000;
+
+}
+.project-card:hover .project-overlay
+{
+
+height: 100%;
+
+}
+.project-card:hover
+{
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+.project-card:hover img
+{
+transform: scale(1.2);
+}
+
+.timeline-container {
+  margin-top: 70px;
+}
+
+
+.verticaltimeline-container p{
+
+color: #000;
+}
+
+.verticaltimeline-container h3{
+
+  color: #000;
+  }
+  .verticaltimeline-container h4{
+
+    color: #000;
+    }
+.contact {
+  margin-top: 50px;
 }

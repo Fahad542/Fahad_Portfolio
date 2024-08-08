@@ -7,6 +7,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import { gsap, Power3 } from "gsap";
 import Project from "./components/Project";
+import Contact_us from "./components/Contact_us";
 // import { Canvas } from '@react-three/fiber';
 function App() {
   let tl = new gsap.timeline();
@@ -16,6 +17,8 @@ function App() {
       <Navbar timeline={tl} ease={ease}/>
       <Hero />
       <About />
+      <Project/>
+      <Contact_us/>
    
     </>
   );
