@@ -3,9 +3,11 @@ import { motion } from "framer-motion";
 import MobileCanvas from "./Mobile";
 
 
+
 const Hero = () => {
   return (
     <div className="container hero-section">
+
       <div className="row d-flex align-items-center">
         <motion.div
           animate={{
@@ -22,7 +24,7 @@ const Hero = () => {
           <div className="round"></div>
           <div className="line"></div>
           <div className="hero">
-            <p className="hero-text oleo">
+            <p className="hero-text ">
               Hi I am <span className="myname">Fahad</span>
             </p>
             <p>Frontend Developer</p>

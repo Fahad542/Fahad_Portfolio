@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Playwrite+CA:wght@100..400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Oleo+Script:wght@400;700&family=Playwrite+CA:wght@100..400&display=swap');
-/* Define CSS variables for dynamic colors */
+
 :root {
-  --primary-color: #debe1a;
+  --primary-color: rgb(160, 12, 209);
   --text-color: aliceblue;
   --hover-background: #242424;
   --shadow-color: rgba(255, 255, 255, 0.5);
@@ -10,13 +10,25 @@
 }
 
 .mybody {
-  /* give a gradient background */
-
-  background:  rgb(30, 30, 30);
+  background: linear-gradient(to right, black, rgb(26, 1, 26));
   color: var(--text-color);
   margin: 0;
   padding: 0;
-  
+}
+.text-gradient {
+  background: radial-gradient(
+    64.18% 64.18% at 71.16% 35.69%,
+    #def9fa 0.89%,
+    #bef3f5 17.23%,
+    #9dedf0 42.04%,
+    #7de7eb 55.12%,
+    #5ce1e6 71.54%,
+    #33bbcf 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
 }
 
 .mylogo {
@@ -36,14 +48,12 @@
     flex-direction: column;
     align-items: flex-start;
     padding: 10px;
-  }
-  .col-sm-6.center-col.col2 {
+          }
+  .col-sm-6.center-col.col2 
+          {
     margin-top: 10%;
-}
-  
-
-
-}
+          }                
+                          }
 .mylogo:hover {
   color: var(--primary-color);
 }
@@ -59,8 +69,7 @@
 }
 
 .link:hover {
-  background-color: var(--hover-background);
-  border-radius: 6px;
+  
   color: var(--primary-color);
   transition: all 0.8s ease;
 }
@@ -91,8 +100,8 @@
 }
 
 .oleo {
-  font-family: "Oleo Script", system-ui;
-  font-weight: 400;
+  font-family: "font-poppins", system-ui;
+  font-weight: bold;
   font-style: normal;
 }
 
@@ -115,8 +124,8 @@
   width: 100%;
   color: #fff;
   border-radius: 40px;
-
   padding-bottom: 50px;
+
 }
 
 .intro-h {
@@ -134,7 +143,10 @@ p.into-text {
 }
 
 .myname {
-  color: var(--primary-color);
+  background: linear-gradient(to right, purple, white);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent; 
 }
 
 
@@ -164,8 +176,8 @@ button.button {
 }
 
 button.button:hover {
-  background-color: var(--primary-color);
-  color: #000000;
+  background: linear-gradient(to right, black, rgb(26, 1, 26));
+  color: #fff;
   border-color: var(--primary-color);
   transition: all 0.8s ease;
 }
@@ -177,7 +189,6 @@ div.hero-buttons {
 }
 
 .animated-card {
- 
   border-radius: 10px;
   margin: 10px; /* Margin around the card itself */
   overflow: hidden; /* Ensures the image doesn’t overflow the card */
@@ -194,9 +205,10 @@ div.hero-buttons {
   perspective: 1000px;
 }
 .animated-card:hover {
+
   transform: scale(1.05); /* Slightly scale up the card */
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
-  background-color: var(--hover-background-color); /* Optional: Change background color on hover */
+  background-color: var(--hover-background-color); 
 
 }
 
@@ -258,7 +270,7 @@ div.hero-buttons {
 
 .about-card {
   position: relative;
-  background: rgb(30, 30, 30);
+  background: linear-gradient(to right, black, rgb(26, 1, 26));
   width: 280px;
   padding: 1px;
   border-radius: 25px; /* Rounded corners */
@@ -275,7 +287,7 @@ div.hero-buttons {
   left: -1px;
   right: -1px;
   bottom: -1px;
-  background: linear-gradient(45deg, #202020, #f1ee37, #f1ee37, #202020);
+  background:var(--primary-color);
   z-index: -1;
   border-radius: 27px; 
 }
@@ -456,7 +468,7 @@ div.hero-buttons {
 
 .skill-bar-progress {
   height: 17px;
-  background-color: var(--primary-color);
+  background: linear-gradient(144deg, rgb(78, 12, 100) 0%, rgb(150, 143, 226) );
   border-radius: 7px;
   transition: width 3s ease-in-out;
 }
@@ -474,11 +486,23 @@ div.hero-buttons {
 
 
 }
+
+.frameworks {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically if needed */
+
+  flex-wrap: wrap; /* Allows items to wrap if there is not enough space */
+}
 .project-image {
   padding: 10px;
   height: 250px;
   width: 350px;
+  
+  border-radius: 20px;
 }
+
 .project-icon{
   height: 40px;
   width: 40px;
@@ -491,14 +515,16 @@ div.hero-buttons {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  
 }
 .preview-button {
+  margin-bottom: 10px;
   display: inline-block;
   margin-top: 15px;
   padding: 6px 15px;
   color: white;
   font-size: small;
-  background-color: black;
+  background-color: var(--primary-color);
   text-decoration: none;
   border-radius: 10px;
   transition: background-color 0.3s;
@@ -507,13 +533,20 @@ div.hero-buttons {
   
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  gap: 20px;
+  
+}
+.icon-title {
+  font-size: 0.8rem; /* Adjust this value to make the text smaller or larger */
+  color: #fff; /* Optional: Set text color to ensure it contrasts well with the background */
+  margin: 0; /* Optional: Remove default margins if needed */
+  padding: 0; /* Optional: Remove default padding if needed */
 }
 .project-overlay{
   
+  box-sizing: border-box; 
   height: 0;
   position: absolute;
+  
   width: 100%;
   left: 0;
   bottom: 0;
@@ -521,7 +554,8 @@ div.hero-buttons {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(transparent,var(--primary-color));
+  background: linear-gradient(to right, black, rgb(26, 1, 26));
+
   transition: height 0.5s;
   overflow: hidden; 
 }
@@ -529,7 +563,7 @@ div.hero-buttons {
  
   margin-top: 10px;
   margin-bottom: 5px;
-  color: #000;
+ 
   
 } 
 .project-overlay p
@@ -538,18 +572,17 @@ div.hero-buttons {
   padding: 5px;
   margin-top: 10px;
   margin-bottom: 5px;
-  color: #000;
-
+  
 }
 .project-card:hover .project-overlay
 {
-
+  opacity: 1;
 height: 100%;
 
 }
 .project-card:hover
 {
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 4px 15px rgba(128, 0, 128, 0.5);
 }
 
 .project-card:hover img
@@ -575,6 +608,226 @@ color: #000;
 
     color: #000;
     }
+    
 .contact {
-  margin-top: 50px;
+  margin-top: 80px;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #000718; 
+}
+
+body, input, textarea, a {
+  font-family: 'Roboto', sans-serif;
+}
+
+#section-wrapper {
+  width: 100%;
+  padding: 10px;
+}
+
+.box-wrapper {
+  position: relative;
+  display: table;
+  width: 1100px;
+  margin: auto;
+  margin-top: 35px;
+  border-radius: 30px;
+}
+
+.info-wrap {
+  width: 35%;
+  height: 551px;
+  padding: 40px;
+  float: left;
+  display: block;
+  border-radius: 30px 0px 0px 30px;
+  background: linear-gradient(144deg, rgba(126,39,156,1) 0%, rgba(49,39,157,1) 49%);
+  color: #fff;
+}
+
+.info-title {
+  text-align: left;
+  font-size: 28px;
+  letter-spacing: 0.5px;
+}
+
+.info-sub-title {
+  font-size: 18px;
+  font-weight: 300;
+  margin-top: 17px;
+  letter-spacing: 0.5px;
+  line-height: 26px;
+}
+
+.info-details {
+  list-style: none;
+  margin: 60px 0px;
+}
+
+.info-details li {
+  margin-top: 25px;
+  font-size: 18px;
+  color: #fff;
+}
+
+.info-details li i {
+  background: #F44770;
+  padding: 12px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.info-details li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.info-details li a:hover {
+  color: #F44770;
+}
+
+.social-icons {
+  list-style: none;
+  text-align: center;
+  margin: 20px 0px;
+}
+
+.social-icons li {
+  display: inline-block;
+}
+
+.social-icons li i {
+  background: #F44770;
+  color: #fff;
+  padding: 15px;
+  font-size: 20px;
+  border-radius: 22%;
+  margin: 0px 5px;
+  cursor: pointer;
+  transition: all .5s;
+}
+.contact-h{
+  margin-top: 6%;
+}
+
+.social-icons li i:hover {
+  background: #fff;
+  color: #000000;
+}
+
+.form-wrap {
+  width: 65%;
+  float: right;
+  padding: 40px 25px 35px 25px;
+  border-radius: 0px 30px 30px 0px;
+  background: #ecf0f3;
+}
+
+.form-title {
+  text-align: left;
+  margin-left: 23px;
+  font-size: 28px;
+  letter-spacing: 0.5px;
+}
+
+.form-fields {
+  display: table;
+  width: 100%;
+  padding: 15px 5px 5px 5px;
+}
+
+.form-fields input,
+.form-fields textarea {
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 18px;
+  color: #555;
+  padding: 20px 10px 20px 5px;
+  width: 100%;
+}
+
+.form-fields textarea {
+  height: 150px;
+  resize: none;
+}
+
+.form-group {
+  width: 46%;
+  float: left;
+  padding: 0px 30px;
+  margin: 14px 12px;
+  border-radius: 25px;
+  box-shadow: inset 8px 8px 8px #cbced1, inset -8px -8px 8px #ffffff;
+}
+
+.form-fields .form-group:last-child {
+  width: 96%;
+}
+
+.submit-button {
+  width: 96%;
+  height: 60px;
+  margin: 0px 12px;
+  border-radius: 30px;
+  font-size: 20px;
+  font-weight: 700;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  text-align: center;
+  background: #F44770;
+  box-shadow: 3px 3px 8px #b1b1b1, -3px -3px 8px #ffffff;
+  transition: .5s;
+}
+
+.submit-button:hover {
+  background: #31279d;
+}
+
+/* Responsive css */
+@media only screen and (max-width: 767px) {
+  .box-wrapper {
+      width: 100%;
+  }
+  .info-wrap,
+  .form-wrap {
+      width: 100%;
+      height: inherit;
+      float: none;  
+  }
+  .info-wrap {
+      border-radius: 30px 30px 0px 0px;
+  }
+  .form-wrap {
+      border-radius: 0px 0px 30px 30px;
+  }
+  .form-group {
+      width: 100%;
+      float: none;
+      margin: 25px 0px;
+  }
+  .form-fields .form-group:last-child, 
+  .submit-button {
+      width: 100%;
+  }
+  .submit-button {
+      margin: 10px 0px;
+  }
+}
+
+
+.frameworks{
+ 
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
 }

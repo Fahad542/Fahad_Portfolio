@@ -1,4 +1,10 @@
-let timelineElements = [
+
+import flutter from '../assets/Icons/flutter_icon.png'
+import project from '../assets/Icons/project.jpeg'
+import github from '../assets/Icons/gith.png'
+import playstore from '../assets/Icons/playstore.png'
+import firebabse from '../assets/Icons/firebase.png'
+const timelineElements = [
     {
       id: 1,
       title: "Frontend Developer",
@@ -59,26 +65,99 @@ let timelineElements = [
       icon: "school",
     },
   ];
-  
-
-
-
-  let skills= [
+  const Projects = [
     {
-      "heading": "MOBILE APPS DEVELOPEMENT",
-      "description": "I can develop best of the best Android and Ios app for you using Flutter framework. I am using best approaches and patterns that I have learned. I have a good experience on flutter state management using bloc, provider and getx. I always keep user experience in mind while writing code so that app is always responsive and fast."
+      id: 1,
+      img:project,
+      title: "Frontend Developer",
+      description: "Converting data to a graphical interface, through the use of HTML, CSS, and JavaScript.",
+      framework:[
+        {
+        title:"Flutter",
+        icon:flutter,
+      
+        },
+        {
+          title:"Firebabse",
+          icon:firebabse
+          },
+          {
+            title:"Playstore",
+            icon:flutter
+            }
+      ],
+      
     },
     {
-      "heading": "MOBILE APPS DEVELOPEMENT",
-      "description": "I can develop best of the best Android and Ios app for you using Flutter framework. I am using best approaches and patterns that I have learned. I have a good experience on flutter state management using bloc, provider and getx. I always keep user experience in mind while writing code so that app is always responsive and fast."
+      id: 2,
+      img:project,
+      title: "Frontend Developer",
+      description: "Converting data to a graphical interface, through the use of HTML, CSS, and JavaScript.",
+      framework:[
+        {
+        title:"Flutter",
+        icon:flutter,
+      
+        },
+        {
+          title:"Github",
+          icon:""
+          },
+          {
+            title:"Playstore",
+            icon:""
+            }
+      ],
+
     },
     {
-      "heading": "MOBILE APPS DEVELOPEMENT",
-      "description": "I can develop best of the best Android and Ios app for you using Flutter framework. I am using best approaches and patterns that I have learned. I have a good experience on flutter state management using bloc, provider and getx. I always keep user experience in mind while writing code so that app is always responsive and fast."
-    }
-  ]
+      id: 3,
+      img:project,
+      title: "Frontend Developer",
+      description: "Converting data to a graphical interface, through the use of HTML, CSS, and JavaScript.",
+      framework:[
+        {
+        title:"Flutter",
+        icon:flutter,
+      
+        },
+        {
+          title:"Github",
+          icon:""
+          },
+          {
+            title:"Playstore",
+            icon:""
+            }
+      ],
+
+    },
+    {
+      id: 2,
+      img:project,
+      title: "Frontend Developer",
+      description: "Converting data to a graphical interface, through the use of HTML, CSS, and JavaScript.",
+      framework:[
+        {
+        title:"Flutter",
+        icon:flutter,
+      
+        },
+        {
+          title:"Github",
+          icon:github
+          },
+          {
+            title:"Playstore",
+            icon:playstore
+            }
+      ],
+
+    },
+   
+  ];
   
-  export default timelineElements;
+  export  {timelineElements ,Projects};
 
 
 

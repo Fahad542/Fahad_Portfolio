@@ -8,6 +8,7 @@ import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import { gsap, Power3 } from "gsap";
 import Project from "./components/Project";
 import Contact_us from "./components/Contact_us";
+import Footer from "./components/Footer";
 // import { Canvas } from '@react-three/fiber';
 function App() {
   let tl = new gsap.timeline();
@@ -18,7 +19,7 @@ function App() {
       <Hero />
       <About />
       <Project/>
-      <Contact_us/>
+  
    
     </>
   );
