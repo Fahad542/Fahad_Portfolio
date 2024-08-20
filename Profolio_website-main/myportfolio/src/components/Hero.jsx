@@ -2,12 +2,9 @@ import React from "react";
 import { motion } from "framer-motion";
 import MobileCanvas from "./Mobile";
 
-
-
 const Hero = () => {
   return (
     <div className="container hero-section">
-
       <div className="row d-flex align-items-center">
         <motion.div
           animate={{
@@ -19,15 +16,21 @@ const Hero = () => {
             repeatType: "loop",
             ease: "linear",
           }}
-          className="col-md-7"
+          className="col-md-6"
         >
           <div className="round"></div>
           <div className="line"></div>
           <div className="hero">
-            <p className="hero-text ">
+            <a className="herotext" href="https://en.wikipedia.org/wiki/Violet_(color)">Hi I'm Fahad Shafiq</a>
+            {/* <p className="hero-text ">
               Hi I am <span className="myname">Fahad</span>
-            </p>
+            </p> */}
             <p>Frontend Developer</p>
+
+            {/* Frontend Developer
+
+Download CV
+Contact Me */}
 
             <div className="hero-buttons">
               <button className="button">Download CV</button>
@@ -35,7 +38,7 @@ const Hero = () => {
             </div>
           </div>
         </motion.div>
-        <div className="col-md-5 position-relative">
+        <div className="col-md-6 position-relative">
           {/* <div className="circle-behind"></div> */}
           <div className="mobilediv">
             <MobileCanvas />
