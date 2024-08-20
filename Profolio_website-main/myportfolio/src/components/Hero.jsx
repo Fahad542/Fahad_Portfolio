@@ -21,7 +21,12 @@ const Hero = () => {
           <div className="round"></div>
           <div className="line"></div>
           <div className="hero">
-            <a className="herotext" href="https://en.wikipedia.org/wiki/Violet_(color)">Hi I'm Fahad Shafiq</a>
+            <a
+              className="herotext"
+              href="https://en.wikipedia.org/wiki/Violet_(color)"
+            >
+              Hi I'm Fahad Shafiq
+            </a>
             {/* <p className="hero-text ">
               Hi I am <span className="myname">Fahad</span>
             </p> */}

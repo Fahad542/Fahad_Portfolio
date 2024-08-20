@@ -12,15 +12,18 @@ import Footer from "./components/Footer";
 // import { Canvas } from '@react-three/fiber';
 function App() {
   let tl = new gsap.timeline();
-  let ease = Power3.easeOut
+  let ease = Power3.easeOut;
   return (
     <>
-      <Navbar timeline={tl} ease={ease}/>
-      <Hero />
-      <About />
-      <Project/>
-  
-   
+      <div>
+        <div class="circle circle1"></div>
+        <div class="circle circle2"></div>
+        <div class="circle circle3"></div>
+        <Navbar timeline={tl} ease={ease} />
+        <Hero />
+        <About />
+        <Project />
+      </div>
     </>
   );
 }

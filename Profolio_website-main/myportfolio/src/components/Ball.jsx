@@ -21,7 +21,7 @@ const Ball = (props) => {
         <pointLight intensity={8} />
         <icosahedronGeometry args={[1, 1]} />
         <meshStandardMaterial
-          color="#46867e"
+          color="#c109ff"
           //   roughness={0.059}
           //   metalness={0.02}
           //   fog

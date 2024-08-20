@@ -1,4 +1,3 @@
-
 import AnimatedCard from "../Widgets/Animated_card";
 import Skill_card from "../Widgets/Skill_card";
 import flutter from "../assets/Icons/flutter_image.png";
@@ -80,9 +79,8 @@ const About = () => {
           description="Rest Apis"
         /> */}
       </div>
-      
+
       <div className="row card2">
-     
         <div className="col-sm-4 center-col">
           <Skill_card
             heading="MOBILE APPS DEVELOPEMENT"
@@ -101,26 +99,23 @@ const About = () => {
             description="I can develop best of the best Android and Ios app for you using Flutter framework. I am using best approaches and patterns that I have learned. I have a good experience on flutter state management using bloc, provider and getx. I always keep user experience in mind while writing code so that app is always responsive and fast."
           />
         </div>
-    
       </div>
- 
+
       <h1 className="oleo do-h" style={{ marginTop: "90px" }}>
         Proficiency
       </h1>
-    <Skill_bar skillName={'Flutter'}  percentage={89}/>
-    <Skill_bar skillName={'Dart'}  percentage={80}/>
-    <Skill_bar skillName={'Rest Apis'}  percentage={75}/>
-    <Skill_bar skillName={'Firebase'}  percentage={70}/>
-    <Skill_bar skillName={'Sqflite'}  percentage={70}/>
-    <Skill_bar skillName={'React Native'}  percentage={60}/>
-    <Skill_bar skillName={'HTML'}  percentage={50}/>
-    <Skill_bar skillName={'CSS'}  percentage={40}/>
-    
-    <div className="timeline-container">
-    <Timeline/>
-    </div>
-    
+      <Skill_bar skillName={"Flutter"} percentage={89} />
+      <Skill_bar skillName={"Dart"} percentage={80} />
+      <Skill_bar skillName={"Rest Apis"} percentage={75} />
+      <Skill_bar skillName={"Firebase"} percentage={70} />
+      <Skill_bar skillName={"Sqflite"} percentage={70} />
+      <Skill_bar skillName={"React Native"} percentage={60} />
+      <Skill_bar skillName={"HTML"} percentage={50} />
+      <Skill_bar skillName={"CSS"} percentage={40} />
 
+      <div className="timeline-container">
+        <Timeline />
+      </div>
     </div>
   );
 };
