@@ -10,6 +10,7 @@
 }
 
 .mybody {
+    font-family:  Poppins, sans-serif;;
   background: linear-gradient(to right, black, rgb(26, 1, 26));
   color: var(--text-color);
   margin: 0;
@@ -63,15 +64,30 @@
 }
 
 .link {
-  text-decoration: none;
-  color: var(--text-color);
-  padding: 5px;
+  color: #fff;
+  text-decoration: none; /* No underline by default */
+  position: relative; /* To position the bar correctly */
 }
 
 .link:hover {
-  
   color: var(--primary-color);
-  transition: all 0.8s ease;
+}
+
+.link::after {
+  content: ''; /* No text content for the pseudo-element */
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: -2px; /* Adjust as needed for spacing */
+  width: 100%;
+  height: 2px; /* Height of the bar */
+  background-color: var(--primary-color); /* Color of the bar */
+  transform: scaleX(0); /* Initially scaled to 0 */
+  transition: transform 0.8s ease; /* Smooth transition */
+}
+
+.link:hover::after {
+  transform: scaleX(1); /* Scale the bar to full width on hover */
 }
 
 /* Hero Section */
@@ -106,9 +122,9 @@
 }
 
 .hero {
-  font-family: "Cinzel", serif;
+  font-family:  Poppins, sans-serif;
   font-optical-sizing: auto;
-  font-weight: 400;
+  font-weight: 600;
   font-style: normal;
   margin-left: 40px;
 }
@@ -133,6 +149,7 @@
   color: var(--text-color);
 }
 .do-h {
+  font-family:  Poppins, sans-serif;
   margin-top: 50px; 
   font-size: 50px;
   color: var(--text-color);
@@ -143,7 +160,7 @@ p.into-text {
 }
 
 .myname {
-  background: linear-gradient(to right, purple, white);
+  background: #fff;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   color: transparent; 
@@ -155,18 +172,20 @@ p.into-text {
 }
 
 .into-text {
+  font-family:  Poppins, sans-serif;
   border-radius: 30px;
   padding: 30px;
   margin-top: 25px;
 
   color: #2c2c2c;
   font-size: 20px;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  
 
 }
 button.button {
+
   padding: 10px 20px;
-  background-color: rgb(30, 30, 30);
+  background-color: #0000;
   border: 2px solid var(--primary-color);
   color: var(--background-color);
   cursor: pointer;
@@ -232,6 +251,7 @@ div.hero-buttons {
 }
 
 .card-description {
+  font-family:  Poppins, sans-serif;
   font-size: 1rem;
   color: var(--text-color);
 }

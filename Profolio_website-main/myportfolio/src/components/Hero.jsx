@@ -19,7 +19,7 @@ const Hero = () => {
             repeatType: "loop",
             ease: "linear",
           }}
-          className="col-md-6"
+          className="col-md-7"
         >
           <div className="round"></div>
           <div className="line"></div>
@@ -35,7 +35,7 @@ const Hero = () => {
             </div>
           </div>
         </motion.div>
-        <div className="col-md-6 position-relative">
+        <div className="col-md-5 position-relative">
           {/* <div className="circle-behind"></div> */}
           <div className="mobilediv">
             <MobileCanvas />
