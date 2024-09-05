@@ -7,6 +7,7 @@ import app1 from "../assets/Icons/app1.png";
 import app2 from "../assets/Icons/app2.png";
 import app3 from "../assets/Icons/app3.png";
 import app4 from "../assets/Icons/app4.png";
+import playy from "../assets/Icons/play.png";
 
 const timelineElements = [
   {
@@ -73,7 +74,7 @@ const Projects = [
   {
     id: 1,
     img: app1,
-    title: "Frontend Developer",
+    title: "Premier Annual Sales Conference App",
     description:
       "Converting data to a graphical interface, through the use of HTML, CSS, and JavaScript.",
     framework: [
@@ -87,72 +88,93 @@ const Projects = [
       },
       {
         title: "Playstore",
-        icon: flutter,
+        icon: playy,
       },
-    ],
+     ],
   },
   {
     id: 2,
     img: app2,
-    title: "Frontend Developer",
+    title: "Premier Employee Self Service",
     description:
       "Converting data to a graphical interface, through the use of HTML, CSS, and JavaScript.",
-    framework: [
-      {
-        title: "Flutter",
-        icon: flutter,
-      },
-      {
-        title: "Github",
-        icon: "",
-      },
-      {
-        title: "Playstore",
-        icon: "",
-      },
-    ],
+      framework: [
+        {
+          title: "Flutter",
+          icon: flutter,
+        },
+        {
+          title: "Firebabse",
+          icon: firebabse,
+        },
+        {
+          title: "Playstore",
+          icon: playy,
+        },
+       ],
   },
   {
     id: 3,
     img: app3,
-    title: "Frontend Developer",
+    title: "Premier Pfizer ",
     description:
       "Converting data to a graphical interface, through the use of HTML, CSS, and JavaScript.",
-    framework: [
-      {
-        title: "Flutter",
-        icon: flutter,
-      },
-      {
-        title: "Github",
-        icon: "",
-      },
-      {
-        title: "Playstore",
-        icon: "",
-      },
-    ],
+      framework: [
+        {
+          title: "Flutter",
+          icon: flutter,
+        },
+        {
+          title: "Firebabse",
+          icon: firebabse,
+        },
+        {
+          title: "Playstore",
+          icon: playy,
+        },
+       ],
   },
   {
     id: 2,
     img: app4,
-    title: "Frontend Developer",
+    title: "Premier Pulse",
     description:
       "Converting data to a graphical interface, through the use of HTML, CSS, and JavaScript.",
-    framework: [
-      {
-        title: "Flutter",
-        icon: flutter,
-      },
-      {
-        title: "Github",
-        icon: github,
-      },
-      {
-        title: "Playstore",
-        icon: playstore,
-      },
-    ],
+      framework: [
+        {
+          title: "Flutter",
+          icon: flutter,
+        },
+        {
+          title: "Firebabse",
+          icon: firebabse,
+        },
+        {
+          title: "Playstore",
+          icon: playy,
+        },
+       ],
+  },
+  {
+    id: 2,
+    img: app4,
+    title: "Premier Pulse",
+    description:
+      "Converting data to a graphical interface, through the use of HTML, CSS, and JavaScript.",
+      framework: [
+        {
+          title: "Flutter",
+          icon: flutter,
+        },
+        {
+          title: "Firebabse",
+          icon: firebabse,
+        },
+        {
+          title: "Playstore",
+          icon: playy,
+        },
+       ],
   },
 ];
 

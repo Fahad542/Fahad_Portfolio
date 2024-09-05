@@ -21,10 +21,10 @@ const Ball = (props) => {
         <pointLight intensity={8} />
         <icosahedronGeometry args={[1, 1]} />
         <meshStandardMaterial
-          color="#c109ff"
-          //   roughness={0.059}
-          //   metalness={0.02}
-          //   fog
+          color="#D3D3D3"
+            roughness={0.059}
+          metalness={0.02}
+         
           polygonOffset
           polygonOffsetFactor={-5}
           flatShading

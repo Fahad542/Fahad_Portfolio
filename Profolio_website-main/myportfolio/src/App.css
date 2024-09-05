@@ -1,13 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Playwrite+CA:wght@100..400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Oleo+Script:wght@400;700&family=Playwrite+CA:wght@100..400&display=swap');
 
-:root {
+:root { 
+
   --primary-color: rgb(160, 12, 209);
   --text-color: aliceblue;
   --hover-background: #242424;
   --hover-background: #c109ff;
   --shadow-color: rgba(255, 255, 255, 0.5);
   --gradient-color: rgb(199, 211, 35);
+
 }
 
 .mybody {
@@ -16,19 +18,18 @@
   margin: 0;
   padding: 0;
   overflow-x: hidden;
-  
 }
 
 
 
-.circle {
+.circle 
+{
   filter: blur(300px);
   position: absolute;
   border-radius: 50%;
   background: rgb(255, 255, 255); /* Very soft semi-transparent inner color */
   box-shadow: 0 0 150px rgba(216, 201, 201, 0.3), 0 0 80px rgba(216, 201, 201, 0.2);
-  pointer-events: none; /* Prevents mouse events on the shadow */ /* Prevents mouse events on the circles */ 
-  /* give it a blurry effect */;
+  pointer-events: none; 
   opacity: 0.5;
 }
 
@@ -98,7 +99,6 @@
 }
 
 .nav {
-
   gap: 50px;
 }
 
@@ -112,21 +112,23 @@
   padding-left: 10px;
   padding-right: 10px;
 
-}
+}        
 .btn_head:hover{
+
   background-color: #212245;
   box-shadow: 0 0 30px #212245;
   border: 3px solid #212245;
   color: white;
   /* scale it to 1.1 */
   transform: scale(1.1);
+   
 }
 
 .link {
   text-decoration: none;
   color: var(--text-color);
   padding: 5px;
-    font-family: "Source Code Pro", monospace;
+    
     font-optical-sizing: auto;
     font-weight: bold;
     font-size:18px;
@@ -138,12 +140,9 @@
   transition: all 0.8s ease;
 }
 
-/* Hero Section */
+
 .hero-section {
   margin-top: 100px;
- 
-  
-  
 }
 
 .round {
@@ -164,13 +163,13 @@
 }
 
 .oleo {
-  font-family: "Source Code Pro", monospace;
+  font-family: Poppins, sans-serif;
   font-weight: bold;
   font-style: normal;
 }
 
 .hero {
-  font-family: "Source Code Pro", monospace;
+  font-family:Montserrat, sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
@@ -180,12 +179,14 @@
   font-size: 20px;
 }
 .herotext{
+
+  font-weight: bold;
   text-decoration: none;
   color: #fff;
-  font-size: 70px;
-  font-family: "Source Code Pro", monospace;
-  text-shadow: 0 0 2px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px rgb(42, 2, 42),
-      0 0 70px rgb(42, 2, 42), 0 0 80px rgb(42, 2, 42), 0 0 100px rgb(42, 2, 42), 0 0 150px rgb(42, 2, 42);
+  font-size: 60px;
+  font-family: Montserrat, sans-serif;
+  /* text-shadow: 0 0 2px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px rgb(42, 2, 42),
+      0 0 70px rgb(42, 2, 42), 0 0 80px rgb(42, 2, 42), 0 0 100px rgb(42, 2, 42), 0 0 150px rgb(42, 2, 42); */
 }
 
 
@@ -219,6 +220,7 @@ p.into-text {
 }
 
 .myname {
+
   background: linear-gradient(to right, purple, white);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -237,7 +239,7 @@ p.into-text {
 
   color: #2c2c2c;
   font-size: 20px;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family:Poppins, sans-serif;
 
 }
 button.button {
@@ -385,7 +387,7 @@ div.hero-buttons {
   box-shadow: 0 8px 16px rgba(var(--primary-color-rgb), 0.2);
 }
 
-/* 3d model */
+
 .canvas-loader {
   font-size: 10px;
   width: 1em;
@@ -554,16 +556,23 @@ div.hero-buttons {
 
 
 
-.project-card{
+.project-card
+{
   
   position: relative; 
   margin-top: 60px;
   overflow: hidden; 
   border-radius: 25px;
-
+  transition: box-shadow 0.5s ease; 
 
 }
-
+.framework-item{
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center horizontally */
+  align-items: center; 
+}
 .frameworks {
   display: flex;
   flex-direction: row;
@@ -581,8 +590,12 @@ div.hero-buttons {
 }
 
 .project-icon{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
   height: 40px;
-  width: 40px;
+
 }
 .project-card img {
   transition: transform 0.5s ease;
@@ -595,7 +608,7 @@ div.hero-buttons {
   
 }
 .preview-button {
-  margin-bottom: 10px;
+
   display: inline-block;
   margin-top: 15px;
   padding: 6px 15px;
@@ -606,24 +619,18 @@ div.hero-buttons {
   border-radius: 10px;
   transition: background-color 0.3s;
 }
-.project-icon{
-  
-  display: flex;
-  flex-direction: row;
-  
-}
+
 .icon-title {
-  font-size: 0.8rem; /* Adjust this value to make the text smaller or larger */
-  color: #fff; /* Optional: Set text color to ensure it contrasts well with the background */
-  margin: 0; /* Optional: Remove default margins if needed */
-  padding: 0; /* Optional: Remove default padding if needed */
+  font-size: 0.8rem; 
+  color: #fff; 
+  margin: 0; 
+  padding: 0; 
 }
-.project-overlay{
-  
+.project-overlay
+{
   box-sizing: border-box; 
   height: 0;
   position: absolute;
-  
   width: 100%;
   left: 0;
   bottom: 0;
@@ -632,34 +639,37 @@ div.hero-buttons {
   align-items: center;
   justify-content: center;
   background: linear-gradient(to right, black, rgb(26, 1, 26));
-
   transition: height 0.5s;
   overflow: hidden; 
 }
-.project-overlay h4{
+.project-overlay h4
+{
  
-  margin-top: 10px;
-  margin-bottom: 5px;
+  margin-top: 20px;
+  color: #000;
+
  
   
 } 
 .project-overlay p
 {
-
-  padding: 5px;
+ 
+  padding: 10px;
   margin-top: 10px;
   margin-bottom: 5px;
   
 }
 .project-card:hover .project-overlay
 {
-  opacity: 1;
+ 
+
 height: 100%;
 
 }
 .project-card:hover
 {
-  box-shadow: 0 4px 15px rgba(128, 0, 128, 0.5);
+  
+  box-shadow: 0 4px 15px rgba(245, 232, 245, 0.5);
 }
 
 .project-card:hover img
@@ -779,7 +789,8 @@ body, input, textarea, a {
   display: inline-block;
 }
 
-.social-icons li i {
+.social-icons li i 
+{
   background: #F44770;
   color: #fff;
   padding: 15px;
@@ -789,16 +800,19 @@ body, input, textarea, a {
   cursor: pointer;
   transition: all .5s;
 }
-.contact-h{
+.contact-h
+{
   margin-top: 6%;
 }
 
-.social-icons li i:hover {
+.social-icons li i:hover 
+{
   background: #fff;
   color: #000000;
 }
 
-.form-wrap {
+.form-wrap 
+{
   width: 65%;
   float: right;
   padding: 40px 25px 35px 25px;
@@ -806,21 +820,24 @@ body, input, textarea, a {
   background: #ecf0f3;
 }
 
-.form-title {
+.form-title 
+{
   text-align: left;
   margin-left: 23px;
   font-size: 28px;
   letter-spacing: 0.5px;
 }
 
-.form-fields {
+.form-fields 
+{
   display: table;
   width: 100%;
   padding: 15px 5px 5px 5px;
 }
 
 .form-fields input,
-.form-fields textarea {
+.form-fields textarea 
+{
   border: none;
   outline: none;
   background: none;
@@ -830,12 +847,14 @@ body, input, textarea, a {
   width: 100%;
 }
 
-.form-fields textarea {
+.form-fields textarea 
+{
   height: 150px;
   resize: none;
 }
 
-.form-group {
+.form-group
+ {
   width: 46%;
   float: left;
   padding: 0px 30px;
@@ -844,11 +863,13 @@ body, input, textarea, a {
   box-shadow: inset 8px 8px 8px #cbced1, inset -8px -8px 8px #ffffff;
 }
 
-.form-fields .form-group:last-child {
+.form-fields .form-group:last-child 
+{
   width: 96%;
 }
 
-.submit-button {
+.submit-button 
+{
   width: 96%;
   height: 60px;
   margin: 0px 12px;
@@ -869,8 +890,11 @@ body, input, textarea, a {
   background: #31279d;
 }
 
-/* Responsive css */
-@media only screen and (max-width: 767px) {
+
+
+
+@media only screen and (max-width: 767px) 
+{
   .box-wrapper {
       width: 100%;
   }
@@ -879,7 +903,7 @@ body, input, textarea, a {
       width: 100%;
       height: inherit;
       float: none;  
-  }
+             }
   .info-wrap {
       border-radius: 30px 30px 0px 0px;
   }
@@ -902,9 +926,8 @@ body, input, textarea, a {
 
 
 .frameworks{
- 
   display: flex;
   flex-direction: row;
   justify-content: center;
-  gap: 20px;
+  gap: 20px; 
 }

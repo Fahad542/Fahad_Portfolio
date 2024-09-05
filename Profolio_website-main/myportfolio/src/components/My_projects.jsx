@@ -8,7 +8,7 @@ const My_projects = ({imageSrc, title,description, frameworks}) => {
       
       </div>
       <div className = "project-overlay">
-      <h4>{title}</h4>
+      <h5>{title}</h5>
       <p>{description}</p>
       <a href="#preview" className="preview-button">Preview</a>
       <div className='frameworks'>

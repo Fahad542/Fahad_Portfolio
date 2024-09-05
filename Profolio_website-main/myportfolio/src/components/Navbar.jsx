@@ -43,7 +43,7 @@ const Navbar = ({ timeline, ease }) => {
           Projects
         </a>
         <a href="" className="link" ref={(el) => (menu_item5 = el)}>
-          <button className="btn_head">Contact Me</button>
+  
         </a>
       </div>
     </div>
