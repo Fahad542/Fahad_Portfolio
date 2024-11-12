@@ -28,7 +28,7 @@ const Navbar = ({ timeline, ease }) => {
       <p className="mylogo" ref={(el) => (logo = el)}>
         Fahad Shafiq
       </p>
-
+  
       <div className="nav">
         <a className="link" href="" ref={(el) => (menu_item1 = el)}>
           Home

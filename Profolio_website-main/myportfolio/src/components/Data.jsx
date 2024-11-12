@@ -8,17 +8,18 @@ import app2 from "../assets/Icons/app2.png";
 import app3 from "../assets/Icons/app3.png";
 import app4 from "../assets/Icons/app4.png";
 import playy from "../assets/Icons/play.png";
+import bulb from "../assets/Icons/bulb.png";
 
 const timelineElements = [
   {
     id: 1,
     title: "Frontend Developer",
-    location: "Dragontail, Ascana",
+    location: "Karachi, Pakistan",
     description:
-      "Converting data to a graphical interface, through the use of HTML, CSS, and JavaScript, so that users can view and interact with that data.",
-    buttonText: "View Frontend Projects",
-    date: "August 2016 - present",
-    icon: "work",
+      "A mobile Application frontend developer responsible for creating and maintaining the user interface of mobile applications using Flutter, React Native, React JS (For Web), Angular, HTML, CSS, and JavaScript.",
+    buttonText: "Create Frontend Projects",
+    date: "March 2019 - present",
+    icon: bulb,
   },
   {
     id: 2,
@@ -28,7 +29,7 @@ const timelineElements = [
       "Working hand-in-hand with front-end developers by providing the outward facing web application elements server-side logic. Creating the logic to make the web app function properly, and accomplishing this through the use of server-side scripting languages.",
     buttonText: "View Backend Projects",
     date: "June 2013 - August 2016",
-    icon: "work",
+    icon: bulb,
   },
   {
     id: 3,
@@ -38,7 +39,7 @@ const timelineElements = [
       "Assessing the quality of specifications and technical design documents in order to ensure timely, relevant and meaningful feedback.",
     buttonText: "Company Website",
     date: "September 2011 - June 2013",
-    icon: "work",
+    icon: bulb,
   },
   {
     id: 4,
@@ -48,7 +49,7 @@ const timelineElements = [
       "Online Course in Magical Beasts and Wonders of the World - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec scelerisque sagittis tellus, non ultrices lacus tempus vel.",
     buttonText: "Course Certificate",
     date: "September 2011",
-    icon: "school",
+    icon: bulb,
   },
   {
     id: 5,
@@ -58,7 +59,7 @@ const timelineElements = [
       "College - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec scelerisque sagittis tellus, non ultrices lacus tempus vel.",
     buttonText: "College Projects",
     date: "2007 - 2011",
-    icon: "school",
+    icon: bulb,
   },
   {
     id: 6,
@@ -67,7 +68,7 @@ const timelineElements = [
     description:
       "Highschool - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec scelerisque sagittis tellus, non ultrices lacus tempus vel.",
     date: "2003 - 2007",
-    icon: "school",
+    icon: bulb,
   },
 ];
 const Projects = [
@@ -90,7 +91,7 @@ const Projects = [
         title: "Playstore",
         icon: playy,
       },
-     ],
+    ],
   },
   {
     id: 2,
@@ -98,20 +99,20 @@ const Projects = [
     title: "Premier Employee Self Service",
     description:
       "Converting data to a graphical interface, through the use of HTML, CSS, and JavaScript.",
-      framework: [
-        {
-          title: "Flutter",
-          icon: flutter,
-        },
-        {
-          title: "Firebabse",
-          icon: firebabse,
-        },
-        {
-          title: "Playstore",
-          icon: playy,
-        },
-       ],
+    framework: [
+      {
+        title: "Flutter",
+        icon: flutter,
+      },
+      {
+        title: "Firebabse",
+        icon: firebabse,
+      },
+      {
+        title: "Playstore",
+        icon: playy,
+      },
+    ],
   },
   {
     id: 3,
@@ -119,20 +120,20 @@ const Projects = [
     title: "Premier Pfizer ",
     description:
       "Converting data to a graphical interface, through the use of HTML, CSS, and JavaScript.",
-      framework: [
-        {
-          title: "Flutter",
-          icon: flutter,
-        },
-        {
-          title: "Firebabse",
-          icon: firebabse,
-        },
-        {
-          title: "Playstore",
-          icon: playy,
-        },
-       ],
+    framework: [
+      {
+        title: "Flutter",
+        icon: flutter,
+      },
+      {
+        title: "Firebabse",
+        icon: firebabse,
+      },
+      {
+        title: "Playstore",
+        icon: playy,
+      },
+    ],
   },
   {
     id: 2,
@@ -140,20 +141,20 @@ const Projects = [
     title: "Premier Pulse",
     description:
       "Converting data to a graphical interface, through the use of HTML, CSS, and JavaScript.",
-      framework: [
-        {
-          title: "Flutter",
-          icon: flutter,
-        },
-        {
-          title: "Firebabse",
-          icon: firebabse,
-        },
-        {
-          title: "Playstore",
-          icon: playy,
-        },
-       ],
+    framework: [
+      {
+        title: "Flutter",
+        icon: flutter,
+      },
+      {
+        title: "Firebabse",
+        icon: firebabse,
+      },
+      {
+        title: "Playstore",
+        icon: playy,
+      },
+    ],
   },
   {
     id: 2,
@@ -161,20 +162,20 @@ const Projects = [
     title: "Premier Pulse",
     description:
       "Converting data to a graphical interface, through the use of HTML, CSS, and JavaScript.",
-      framework: [
-        {
-          title: "Flutter",
-          icon: flutter,
-        },
-        {
-          title: "Firebabse",
-          icon: firebabse,
-        },
-        {
-          title: "Playstore",
-          icon: playy,
-        },
-       ],
+    framework: [
+      {
+        title: "Flutter",
+        icon: flutter,
+      },
+      {
+        title: "Firebabse",
+        icon: firebabse,
+      },
+      {
+        title: "Playstore",
+        icon: playy,
+      },
+    ],
   },
 ];
 

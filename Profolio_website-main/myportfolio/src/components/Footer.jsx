@@ -1,32 +1,73 @@
-import React from 'react';
+import React from "react";
 const Footer = () => {
   return (
-    <footer className="bg-black text-light py-3 mt-5">
-      <div className="container">
-        <div className="row">
-          <div className="col-sm-4 text-center">
-          <p className="mylogo" >
-        Fahad Shafiq
-      </p>
-          </div>
-          <div className="col-sm-4 text-center">
-            <h5>Section 2</h5>
-            <p>Content for section 2</p>
-          </div>
-          <div className="col-sm-4 text-center">
-            <h5>Section 3</h5>
-            <p>Content for section 3</p>
-          </div>
-        </div>
-        <div className="row mt-3">
-          <div className="col text-center">
-            <p> &copy; {
-            new Date().getFullYear()} 
-            Your Company. All Rights Reserved.</p>
-          </div>
-        </div>
-      </div>
-    </footer>
+    <>
+      <footer class="footer" style={{ marginTop: "200px" }}>
+        <ul class="social-icon">
+          <li class="social-icon__item">
+            <a class="social-icon__link" href="#">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+          <li class="social-icon__item">
+            <a class="social-icon__link" href="#">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+          <li class="social-icon__item">
+            <a class="social-icon__link" href="#">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+          <li class="social-icon__item">
+            <a class="social-icon__link" href="#">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+        </ul>
+        <ul class="menu">
+          <li class="menu__item">
+            <a class="menu__link" href="#">
+              Home
+            </a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">
+              About
+            </a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">
+              Services
+            </a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">
+              Team
+            </a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">
+              Contact
+            </a>
+          </li>
+        </ul>
+        <p>&copy;2024 Fahad Shafiq | All Rights Reserved</p>
+      </footer>
+      <article id="wrap" style={{ height: "20vh" }}>
+        <article id="lightings">
+          <section id="one">
+            <section id="two">
+              <section id="three">
+                <section id="four">
+                  <section id="five"></section>
+                </section>
+              </section>
+            </section>
+          </section>
+        </article>
+      </article>
+    </>
   );
 };
 
