@@ -21,12 +21,7 @@ const Hero = () => {
           <div className="round"></div>
           <div className="line"></div>
           <div className="hero">
-            <a
-              className="herotext"
-           
-            >
-              Hi I'm Fahad Shafiq
-            </a>
+            <a className="herotext">Hi I'm Fahad Shafiq</a>
             {/* <p className="hero-text ">
               Hi I am <span className="myname">Fahad</span>
             </p> */}
@@ -43,11 +38,9 @@ Contact Me */}
             </div>
           </div>
         </motion.div>
-        <div className="col-md-5 position-relative">
-          {/* <div className="circle-behind"></div> */}
-          <div className="mobilediv">
-            <MobileCanvas />
-          </div>
+
+        <div className="mobilediv col-md-5">
+          <MobileCanvas />
         </div>
       </div>
     </div>

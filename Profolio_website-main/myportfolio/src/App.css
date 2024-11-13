@@ -477,11 +477,10 @@ div.hero-buttons {
 }
 
 .mobilediv {
-  position: relative; 
-  z-index: 2; 
   height: 60vh;
   animation: slideInLeft 3s ease-out;
   padding: 30px;
+  overflow: visible;
 }
 
 .circle-behind {
