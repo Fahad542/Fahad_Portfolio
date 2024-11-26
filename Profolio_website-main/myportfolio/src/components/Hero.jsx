@@ -1,9 +1,12 @@
 import React from "react";
 import { motion } from "framer-motion";
 import MobileCanvas from "./Mobile";
+import Particle from "./Particles";
 
 const Hero = () => {
   return (
+    <>
+    <Particle/>
     <div className="container hero-section">
       <div className="row d-flex align-items-center">
         <motion.div
@@ -44,6 +47,8 @@ Contact Me */}
         </div>
       </div>
     </div>
+
+    </>
   );
 };
 

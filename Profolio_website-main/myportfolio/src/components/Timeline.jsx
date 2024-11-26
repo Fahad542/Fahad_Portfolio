@@ -17,7 +17,7 @@ const Timeline = () => {
             className="vertical-timeline-element--work"
             contentStyle={{
               background: "rgba(0, 0, 0, 0.75)",
-              boxShadow: "0 0 80px purple",
+              boxShadow: "0 0 20px purple",
               borderRadius: "20px",
             }}
             contentArrowStyle={{

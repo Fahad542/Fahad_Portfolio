@@ -16,6 +16,7 @@ function App() {
   return (
     <>
       <div>
+
         <div class="circle circle1"></div>
         <div class="circle circle2"></div>
         <div class="circle circle3"></div>
@@ -23,6 +24,9 @@ function App() {
         <Hero />
         <About />
         <Project />
+        <div className="container d-flex justify-content-center">
+        <Contact_us/>
+        </div>
         <Footer />
       </div>
     </>

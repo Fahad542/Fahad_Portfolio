@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Playwrite+CA:wght@100..400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Oleo+Script:wght@400;700&family=Playwrite+CA:wght@100..400&display=swap');
 
+
+
 :root { 
 
   --primary-color: rgb(160, 12, 209);
@@ -10,7 +12,9 @@
   --shadow-color: rgba(255, 255, 255, 0.5);
   --gradient-color: rgb(199, 211, 35);
 
+
 }
+
 
 .mybody {
   background: linear-gradient(to right, black, rgb(26, 1, 26));
@@ -557,8 +561,9 @@ div.hero-buttons {
 
 .project-card
 {
-  
+  box-shadow: 0 4px 15px rgba(245, 232, 245, 0.5);
   position: relative; 
+  border: 1px solid #490469;
   margin-top: 60px;
   overflow: hidden; 
   border-radius: 25px;
@@ -581,7 +586,7 @@ div.hero-buttons {
   flex-wrap: wrap; /* Allows items to wrap if there is not enough space */
 }
 .project-image {
-  padding: 10px;
+  scale: 1.5;
   height: 250px;
   width: 350px;
   
@@ -1240,3 +1245,4 @@ box-shadow: 0 0 250px 20px #42F2A1;
 
 to { box-shadow: 0 0 100px 15px #F4F6AD; }
 }
+
